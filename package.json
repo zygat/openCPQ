@@ -11,10 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/webXcerpt/openCPQ"
+    "url": "https://github.com/zygat/openCPQ"
   },
   "homepage": "http://opencpq.org/",
-  "bugs": "https://github.com/webXcerpt/openCPQ/issues",
+  "bugs": "https://github.com/zygat/openCPQ/issues",
   "license": "MIT",
   "scripts": {
     "compile": "./node_modules/.bin/rimraf dst; ./node_modules/.bin/ncp src dst; ./node_modules/.bin/babel src --out-dir dst --source-maps",
