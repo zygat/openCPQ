@@ -1,5 +1,6 @@
 var React = require("react");
-var saveAs = require("browser-filesaver");
+var FileSaver = require('file-saver');
+
 var {ButtonToolbar, ButtonGroup, Button, Input, Glyphicon, Navbar, Nav} = require('react-bootstrap');
 
 function cons(x, list) {
@@ -117,7 +118,7 @@ var RootWidget = React.createClass({
 	},
 	_export() {
 		var blob = new Blob([JSON.stringify(this.state.now, null, 2)], {type: "application/json;charset=utf-8"});
-		saveAs(blob, "openCPQ.json");
+		FileSaver.saveAs(blob, "openCPQ.json");
 	},
 	render() {
 		var {props: {type, initialCtxProvider}, state: {now, past, future}} = this;
