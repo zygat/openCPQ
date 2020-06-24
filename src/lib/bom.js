@@ -4,7 +4,7 @@ var {View} = require("./workbench");
 var {CSideEffect} = require("./util");
 var {ButtonGroup, Button, Glyphicon, Table} = require("react-bootstrap");
 
-var saveAs = require("browser-filesaver");
+var FileSaver = require("filer-saver");
 
 // TODO Use a CSV lib?
 function csvLine(fields) {
