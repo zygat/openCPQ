@@ -4,7 +4,7 @@ var {View} = require("./workbench");
 var {CSideEffect} = require("./util");
 var {ButtonGroup, Button, Glyphicon, Table} = require("react-bootstrap");
 
-var FileSaver = require("filer-saver");
+var FileSaver = require("file-saver");
 
 // TODO Use a CSV lib?
 function csvLine(fields) {
@@ -47,7 +47,8 @@ class BOMView {
 				csv.push(csvLine([quantity, item, label, matNo])); 
 			});
 		var blob = new Blob(csv, {type: "text/csv;charset=utf-8"});
-		saveAs(blob, "openCPQ.csv");
+var FileSaver = require("file-saver");
+	FileSaver.saveAs(blob, "openCPQ.csv");
 	}
 	renderBOM() {
 		var itemMap = this.__itemMap;

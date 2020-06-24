@@ -1,7 +1,7 @@
 {
   "name": "opencpq-matthews",
   "description": "A library for in-browser product-configuration",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "keywords": [
     "configuration",
     "product configuration",
